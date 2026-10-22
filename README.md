@@ -151,29 +151,27 @@ Streamlit affichera l'adresse locale à ouvrir dans votre navigateur.
 
 ## Structure indicative du dépôt
 
-La structure exacte dépend de l'organisation du dépôt. Une organisation
-possible est :
 
 ``` text
-ecommerce-data-analytics/
+ecommerce-data/
 ├── app.py
 ├── requirements.txt
 ├── README.md
+├── docker-compose.yml
+├── Dockerfile
 ├── data/
 │   ├── raw_data.csv
+|   ├── anomalies_ecartees.csv
+    ├── nom_produits_ecartes.csv
+    ├── data.csv
 │   └── cleaned_data.csv
-├── notebooks/
+├── carnets/
 │   ├── 01_clean_and_structure.ipynb
 │   ├── 02_sql_analysis.ipynb
 │   ├── 03_visualizations.ipynb
 │   └── 04_deeper_analysis.ipynb
 └── analysis.db
 ```
-
-Les noms et fichiers ci-dessus sont indicatifs : conservez uniquement
-ceux qui existent réellement dans votre dépôt. Évitez de publier des
-données confidentielles ou volumineuses si elles ne sont pas nécessaires
-à l'exécution.
 
 ## Résultats attendus
 
